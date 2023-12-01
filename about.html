@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='./styles/normalize.css'>
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Lato:wght@300;400&display=swap">
+    <title>About me!</title>
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-identity">
+            <h1><a href="#">LAITH</a></h1>
+        </div>
+        <div class="menu-icon" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="site-navigation">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="contact-btn-nav">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="centered-div-about">
+        <h1 id="about-me-title"> About Me</h1>
+        <hr class="separator">
+        <p class="about-me-text">
+
+            Welcome! I'm a results-driven Full Stack Web Developer, blending technical expertise with creative
+            problem-solving. I craft dynamic,
+            user-centric applications using a variety of technologies.
+
+        </p>
+        <p class="about-me-text">
+
+
+            Eager to contribute my skills to a forward-thinking team. Let's build something incredible together!
+        </p>
+
+
+
+    </div>
+
+    <div class="icons">
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript Icon" />
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Icon" />
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Icon" />
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Icon" />
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel Icon" />
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP Icon" />
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phpstorm/phpstorm-original.svg"
+            alt="PHPStorm Icon" />
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Icon" />
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker Icon" />
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Icon" />
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Icon" />
+
+
+
+
+
+    </div>
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Laith Hijazi. All rights reserved.</p>
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/laith-hijazi-50b4b7201/" target="_blank"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                            alt="LinkedIn icon"></a></li>
+                <li><a href="https://twitter.com/home" target="_blank"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
+                            alt="Twitter icon"></a></li>
+                <li><a href="https://github.com/LaithHijazi" target="_blank"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="Github Icon"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('.site-navigation ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='./styles/normalize.css'>
+    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Lato:wght@300;400&display=swap">
+    <title>Portfolio</title>
+
+</head>
+
+
+<body>
+
+    <header class="site-header">
+        <div class="site-identity">
+            <h1><a href="#">LAITH</a></h1>
+        </div>
+        <div class="menu-icon" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="site-navigation">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="contact-btn-nav">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="centered-div-projects">
+        <h1 id="projects-title"> Projects</h1>
+        <hr class="separator">
+    </div>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="https://placekitten.com/300/159" alt="Project Image">
+            <div class="card-content">
+                <div class="title">Project Title 1</div>
+                <div class="description">
+                    <p>Paragraph area describing the project.</p>
+                </div>
+                <div class="github-link">
+                    <a href="https://github.com/LaithHijazi" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub Icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="https://placekitten.com/300/163" alt="Project Image">
+            <div class="card-content">
+                <div class="title">Project Title 3</div>
+                <div class="description">
+                    <p>Paragraph area describing the project.</p>
+                </div>
+                <div class="github-link">
+                    <a href="https://github.com/LaithHijazi" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub Icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://placekitten.com/300/163" alt="Project Image">
+            <div class="card-content">
+                <div class="title">Project Title 3</div>
+                <div class="description">
+                    <p>Paragraph area describing the project.</p>
+                </div>
+
+                <div class="github-link">
+                    <a href="https://github.com/LaithHijazi" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub Icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://placekitten.com/300/155" alt="Project Image">
+            <div class="card-content">
+                <div class="title">Project Title 4</div>
+                <div class="description">
+                    <p>Paragraph area describing the project.</p>
+                </div>
+
+                <div class="github-link">
+                    <a href="https://github.com/LaithHijazi" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub Icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://placekitten.com/300/154" alt="Project Image">
+            <div class="card-content">
+                <div class="title">Project Title 5</div>
+                <div class="description">
+                    <p>Paragraph area describing the project.</p>
+                </div>
+
+                <div class="github-link">
+                    <a href="https://github.com/LaithHijazi" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub Icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://placekitten.com/300/151" alt="Project Image">
+            <div class="card-content">
+                <div class="title">Project Title 6</div>
+                <div class="description">
+                    <p>Paragraph area describing the project.</p>
+                </div>
+                <div class="github-link">
+                    <a href="https://github.com/LaithHijazi" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub Icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2023 Laith Hijazi. All rights reserved.</p>
+                <ul class="social-icons">
+                    <li><a href="https://www.linkedin.com/in/laith-hijazi-50b4b7201/" target="_blank"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                                alt="LinkedIn icon"></a></li>
+                    <li><a href="https://twitter.com/home" target="_blank"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
+                                alt="Twitter icon"></a></li>
+                    <li><a href="https://github.com/LaithHijazi" target="_blank"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                alt="Github Icon"></a></li>
+                </ul>
+            </div>
+        </footer>
+        <script>
+            function toggleNav() {
+                var nav = document.querySelector('.site-navigation ul');
+                nav.classList.toggle('show');
+            }
+        </script>
+</body>
