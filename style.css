@@ -430,3 +430,70 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Project Carousel Styles */
+.project-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-carousel .project-img {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.project-carousel .project-img.active-slide {
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.carousel-dots {
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot:hover,
+.dot.active-dot {
+  background-color: rgba(255, 255, 255, 0.9);
+}
