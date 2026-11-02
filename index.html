@@ -3,75 +3,83 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laith Hijazi - Scientific Software Developer & Data Scientist</title>
+    <title>Laith Hijazi | Scientific Software Developer & Data Scientist</title>
+    <meta name="description"
+        content="Laith Hijazi: scientific software developer and data scientist building instrument control software, machine learning models and full-stack web apps like NeoGuesser." />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Laith Hijazi | Scientific Software Developer & Data Scientist" />
+    <meta property="og:description"
+        content="Instrument control software, machine learning for chemical analysis, and full-stack web apps." />
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23353535'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='28' fill='white'%3ELH%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Laith Hijazi</div>
-        <div>
-            <ul class="nav-links">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Main">
+            <a class="logo" href="#profile">Laith Hijazi</a>
+            <button class="hamburger-icon" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#experience">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Laith Hijazi</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="profile">
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Laith Hijazi</h1>
+                <p class="section__text__p2">Scientific Software Developer & Data Scientist</p>
+                <div class="btn-container">
+                    <a class="btn btn-color-2" href="./assets/LH_Resume_2025.pdf" target="_blank" rel="noopener">
+                        Download CV
+                    </a>
+                    <a class="btn btn-color-1" href="#contact">Contact Info</a>
+                </div>
+                <div id="socials-container">
+                    <a href="https://www.linkedin.com/in/laith-hijazi-50b4b7201/" target="_blank" rel="noopener"
+                        aria-label="LinkedIn profile">
+                        <img src="./assets/linkedin.png" alt="" class="icon" />
+                    </a>
+                    <a href="https://github.com/LaithHijazi" target="_blank" rel="noopener"
+                        aria-label="GitHub profile">
+                        <img src="./assets/github.png" alt="" class="icon" />
+                    </a>
+                </div>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Laith Hijazi</h1>
-            <p class="section__text__p2">Scientific Software Developer & Data Scientist</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/LH_Resume_2025.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/laith-hijazi-50b4b7201/'" />
-                <img src="./assets/github.png" alt="My Github profile" class="icon"
-                    onclick="location.href='https://github.com/LaithHijazi'" />
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
+        </section>
+
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h2 class="title">About Me</h2>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <img src="./assets/experience.png" alt="" class="icon" />
                         <h3>Experience</h3>
-                        <p>Scientific Software Development<br />Machine Learning & Data Science</p>
+                        <p>Scientific Software Development<br />Machine Learning & Data Science<br />Full-Stack Web Development</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <img src="./assets/education.png" alt="" class="icon" />
                         <h3>Education</h3>
                         <p>B.Sc. Biochemistry & Molecular Biology<br />IT Web Programming Diploma</p>
                     </div>
@@ -79,336 +87,268 @@
                 <div class="text-container">
                     <p>
                         I'm a Scientific Software Developer and Data Scientist specializing in analytical
-                        instrumentation and machine learning.
-                        I build end-to-end solutions that bridge hardware control systems, data processing pipelines,
-                        and AI/ML models
-                        for scientific applications. My work focuses on developing desktop applications for mass
-                        spectrometry equipment,
-                        implementing hardware-software interfaces with Arduino and embedded systems, and creating
-                        machine learning models
-                        for chemical analysis in agriculture and laboratory sciences. I thrive at the intersection of
-                        software engineering,
-                        data science, and scientific instrumentation.
+                        instrumentation and machine learning. I build end-to-end solutions that bridge hardware
+                        control systems, data processing pipelines, and AI/ML models for scientific applications.
+                        My work focuses on desktop applications for mass spectrometry equipment, hardware-software
+                        interfaces with Arduino and embedded systems, and machine learning models for chemical
+                        analysis in agriculture and laboratory sciences. Alongside that, I build full-stack web
+                        applications, most recently a live puzzle game on serverless Cloudflare infrastructure. I
+                        thrive at the intersection of software engineering, data science, and scientific
+                        instrumentation.
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Technical Skills</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Scientific Software & Data Science</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/icons8-python-48.png" alt="Python icon" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/icons8-numpy-48.png" alt="NumPy icon" class="icon" />
-                            <div>
-                                <h3>NumPy/Pandas</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/icons8-pytorch-48.png" alt="PyTorch icon" class="icon" />
-                            <div>
-                                <h3>PyTorch</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/icons8-tensorflow-48.png" alt="TensorFlow icon" class="icon" />
-                            <div>
-                                <h3>Keras/TensorFlow</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/icons8-jupyter-48.png" alt="Jupyter icon" class="icon" />
-                            <div>
-                                <h3>scikit-learn</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/icons8-qt-50.png" alt="Qt icon" class="icon" />
-                            <div>
-                                <h3>PyQt/Qt</h3>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Hardware & Systems</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/icons8-arduino-48.png" alt="Arduino icon" class="icon" />
-                            <div>
-                                <h3>Arduino
-                                    /Embedded IoT</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/icons8-rs-232-female-50.png" alt="Serial icon" class="icon" />
-                            <div>
-                                <h3>Serial Protocols</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/docker.png" alt="Docker icon" class="icon" />
-                            <div>
-                                <h3>Docker</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/git.png" alt="Git icon" class="icon" />
-                            <div>
-                                <h3>Git/Version Control</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/mysql.png" alt="SQL icon" class="icon" />
-                            <div>
-                                <h3>SQL Databases</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/mongodb.png" alt="MongoDB icon" class="icon" />
-                            <div>
-                                <h3>MongoDB</h3>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-            <div class="about-containers" style="margin-top: 2rem;">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Web Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/js.png" alt="JavaScript icon" class="icon" />
-                            <div>
-                                <h3>JavaScript/TS</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/atom.png" alt="React icon" class="icon" />
-                            <div>
-                                <h3>React</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/nodejs.png" alt="NodeJS icon" class="icon" />
-                            <div>
-                                <h3>Node.js</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/html.png" alt="HTML icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/css-3.png" alt="CSS icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Express icon" class="icon" />
-                            <div>
-                                <h3>Express.js</h3>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Additional Technologies</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/c-sharp.png" alt="C# icon" class="icon" />
-                            <div>
-                                <h3>C# / ASP.NET</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/php.png" alt="PHP icon" class="icon" />
-                            <div>
-                                <h3>PHP/Laravel</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/icons8-java-48.png" alt="Java icon" class="icon" />
-                            <div>
-                                <h3>Java</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/icons8-linux-48.png" alt="Linux icon" class="icon" />
-                            <div>
-                                <h3>Bash/Linux</h3>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects & Work</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container project-carousel">
-                        <img src="./assets/cannana1.jpg" alt="Mass Spec Software - Main Interface"
-                            class="project-img active-slide" />
-                        <img src="./assets/cannana2.jpg" alt="Mass Spec Software - Control Panel" class="project-img" />
-                        <img src="./assets/cannana3.jpg" alt="Mass Spec Software - Data Analysis" class="project-img" />
-                        <button class="carousel-btn prev-btn" onclick="changeSlide(this, -1)">&#10094;</button>
-                        <button class="carousel-btn next-btn" onclick="changeSlide(this, 1)">&#10095;</button>
-                        <div class="carousel-dots">
-                            <span class="dot active-dot" onclick="currentSlide(this, 0)"></span>
-                            <span class="dot" onclick="currentSlide(this, 1)"></span>
-                            <span class="dot" onclick="currentSlide(this, 2)"></span>
+        </section>
+
+        <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h2 class="title">Technical Skills</h2>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h3 class="experience-sub-title">Scientific Software & Data Science</h3>
+                        <div class="article-container">
+                            <article><img src="./assets/icons8-python-48.png" alt="" class="icon" /><h4>Python</h4></article>
+                            <article><img src="./assets/icons8-numpy-48.png" alt="" class="icon" /><h4>NumPy/<wbr>Pandas</h4></article>
+                            <article><img src="./assets/icons8-pytorch-48.png" alt="" class="icon" /><h4>PyTorch</h4></article>
+                            <article><img src="./assets/icons8-tensorflow-48.png" alt="" class="icon" /><h4>Keras/<wbr>TensorFlow</h4></article>
+                            <article><img src="./assets/icons8-jupyter-48.png" alt="" class="icon" /><h4>scikit-learn</h4></article>
+                            <article><img src="./assets/icons8-qt-50.png" alt="" class="icon" /><h4>PyQt/<wbr>Qt</h4></article>
                         </div>
                     </div>
-                    <h2 class="experience-sub-title project-title">Mass Spectrometry Software Platform</h2>
-                    <p>Developed a comprehensive PyQt5 desktop application for real-time mass spectrometry control and
-                        data analysis.
-                        Features include hardware interface with Arduino systems, automated calibration workflows, data
-                        processing
-                        pipelines, and ML-powered chemical quantification. Deployed with Docker containerization for
-                        cross-platform
-                        compatibility.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" disabled>
-                            Proprietary
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container project-carousel">
-                        <img src="./assets/spectra1.jpg" alt="ML Analysis - Spectral Data"
-                            class="project-img active-slide" />
-                        <img src="./assets/spectra2.jpg" alt="ML Analysis - Model Results" class="project-img" />
-                        <img src="./assets/spectra3.jpg" alt="ML Analysis - Data Visualization" class="project-img" />
-                        <button class="carousel-btn prev-btn" onclick="changeSlide(this, -1)">&#10094;</button>
-                        <button class="carousel-btn next-btn" onclick="changeSlide(this, 1)">&#10095;</button>
-                        <div class="carousel-dots">
-                            <span class="dot active-dot" onclick="currentSlide(this, 0)"></span>
-                            <span class="dot" onclick="currentSlide(this, 1)"></span>
-                            <span class="dot" onclick="currentSlide(this, 2)"></span>
+                    <div class="details-container">
+                        <h3 class="experience-sub-title">Hardware & Systems</h3>
+                        <div class="article-container">
+                            <article><img src="./assets/icons8-arduino-48.png" alt="" class="icon" /><h4>Arduino/<wbr>Embedded IoT</h4></article>
+                            <article><img src="./assets/icons8-rs-232-female-50.png" alt="" class="icon" /><h4>Serial Protocols</h4></article>
+                            <article><img src="./assets/docker.png" alt="" class="icon" /><h4>Docker</h4></article>
+                            <article><img src="./assets/git.png" alt="" class="icon" /><h4>Git/<wbr>Version Control</h4></article>
+                            <article><img src="./assets/mysql.png" alt="" class="icon" /><h4>SQL Databases</h4></article>
+                            <article><img src="./assets/mongodb.png" alt="" class="icon" /><h4>MongoDB</h4></article>
                         </div>
                     </div>
-                    <h2 class="experience-sub-title project-title">Chemical Analysis ML Models</h2>
-                    <p>Designed and trained machine learning models (Random Forest, Neural Networks) for classification
-                        and
-                        quantification of cannabis phytochemicals from mass spectrometry data. Implemented data
-                        preprocessing
-                        pipelines with automated calibration, feature selection, and model evaluation achieving high
-                        accuracy
-                        for terpene and cannabinoid detection in agricultural applications.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" disabled>
-                            Proprietary
-                        </button>
+                </div>
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h3 class="experience-sub-title">Web Development</h3>
+                        <div class="article-container">
+                            <article><img src="./assets/js.png" alt="" class="icon" /><h4>JavaScript/<wbr>TypeScript</h4></article>
+                            <article><img src="./assets/atom.png" alt="" class="icon" /><h4>React</h4></article>
+                            <article><img src="./assets/nodejs.png" alt="" class="icon" /><h4>Node.js</h4></article>
+                            <article><img src="./assets/html.png" alt="" class="icon" /><h4>HTML</h4></article>
+                            <article><img src="./assets/css-3.png" alt="" class="icon" /><h4>CSS</h4></article>
+                            <article><img src="./assets/checkmark.png" alt="" class="icon" /><h4>Express.js</h4></article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h3 class="experience-sub-title">Additional Technologies</h3>
+                        <div class="article-container">
+                            <article><img src="./assets/c-sharp.png" alt="" class="icon" /><h4>C# /<wbr> ASP.NET</h4></article>
+                            <article><img src="./assets/php.png" alt="" class="icon" /><h4>PHP/<wbr>Laravel</h4></article>
+                            <article><img src="./assets/icons8-java-48.png" alt="" class="icon" /><h4>Java</h4></article>
+                            <article><img src="./assets/icons8-linux-48.png" alt="" class="icon" /><h4>Bash/<wbr>Linux</h4></article>
+                            <article><img src="./assets/checkmark.png" alt="" class="icon" /><h4>Cloudflare Pages/<wbr>R2</h4></article>
+                            <article><img src="./assets/checkmark.png" alt="" class="icon" /><h4>Vite/<wbr>Vitest</h4></article>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="experience-details-container" style="margin-top: 2rem;">
-            <h3 style="text-align: center; margin-bottom: 2rem; color: #555;">Additional Projects</h3>
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/MERN.png" alt="MERN Project" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Full Stack MERN Application</h2>
-                    <p>Built a full-stack web application using the MERN stack (MongoDB, Express.js, React, Node.js)
-                        with
-                        comprehensive CRUD operations, user authentication, and RESTful API design.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/NSCC-ITC-Fall2023-PROG3017-700-MCa/my-fullstack-app-LaithHijazi', '_blank')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://w0475011-fullstack.onrender.com/', '_blank')">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/courses.png" alt="ASP.NET Project" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">ASP.NET Course Management System</h2>
-                    <p>Developed an ASP.NET C# application following CRUD paradigm for managing college courses,
-                        diplomas,
-                        and instructor information. Implemented CI/CD pipeline using GitHub Actions and Azure.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/NSCC-ITC-Winter2024-WEBD3000-700-MCa/nscccoursemap-LaithHijazi', '_blank')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://w0475011-nscccoursemap.azurewebsites.net/', '_blank')">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/laravel.png" alt="Laravel Project" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Laravel Social Media Platform</h2>
-                    <p>Created a Laravel-powered social media application with user registration, authentication, and
-                        comprehensive post management. Features responsive design and database-driven content
-                        management.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/NSCC-ITC-Fall2023-INET2005-700-MCa/finalassignment-LaithHijazi', '_blank')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://w0475011-finalassignment.onrender.com/register', '_blank')">
-                            Live Demo
-                        </button>
+        </section>
+
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h2 class="title">Projects & Work</h2>
+
+            <!-- Featured: NeoGuesser -->
+            <article class="featured-project color-container">
+                <a class="featured-media" href="https://neoguesser.com" target="_blank" rel="noopener"
+                    aria-label="Open NeoGuesser">
+                    <img src="./assets/neoguesser.jpg" width="1200" height="630"
+                        alt="NeoGuesser: guess the fighting game stage from a zoomed-in view" />
+                </a>
+                <div class="featured-body">
+                    <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> Live · Launched Oct 2026</p>
+                    <h3 class="project-title">NeoGuesser</h3>
+                    <p>
+                        A daily fighting-game puzzle with two modes: name the stage from a zoomed-in image, then
+                        name the character from attribute clues. It covers 1,200+ stages and 448 characters across
+                        15+ franchises. Answers are checked by serverless Cloudflare Pages Functions, so they never
+                        reach the browser. A Python pipeline scrapes MediaWiki/Fandom sources and pre-renders every
+                        zoom level for 978 scheduled puzzles under HMAC-signed filenames.
+                    </p>
+                    <ul class="stats" aria-label="Project highlights">
+                        <li><strong>1,400+</strong><span>visits in the first 10 days</span></li>
+                        <li><strong>566 ms</strong><span>average page load</span></li>
+                        <li><strong>47</strong><span>Vitest unit tests</span></li>
+                    </ul>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Vite</li>
+                        <li>Cloudflare Pages Functions</li>
+                        <li>Cloudflare R2</li>
+                        <li>Python</li>
+                        <li>Vitest</li>
+                    </ul>
+                    <div class="btn-container btn-container--start">
+                        <a class="btn btn-color-1 project-btn" href="https://neoguesser.com" target="_blank"
+                            rel="noopener">Play it live</a>
                     </div>
                 </div>
+            </article>
+
+            <div class="project-grid project-grid--two">
+                <article class="details-container color-container project-card">
+                    <div class="project-carousel" aria-roledescription="carousel" aria-label="Mass spectrometry software screenshots">
+                        <img src="./assets/cannana1.jpg" alt="Mass spec software: main interface"
+                            class="project-img active-slide" />
+                        <img src="./assets/cannana2.jpg" alt="Mass spec software: control panel" class="project-img"
+                            loading="lazy" />
+                        <img src="./assets/cannana3.jpg" alt="Mass spec software: data analysis" class="project-img"
+                            loading="lazy" />
+                    </div>
+                    <h3 class="project-title">Mass Spectrometry Software Platform</h3>
+                    <p>A PyQt5 desktop application for real-time mass spectrometry control and data analysis. It
+                        interfaces with Arduino hardware and includes automated calibration workflows, data
+                        processing pipelines and ML-powered chemical quantification. Docker containers keep it
+                        working across platforms.</p>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>Python</li>
+                        <li>PyQt5</li>
+                        <li>Arduino</li>
+                        <li>Docker</li>
+                    </ul>
+                    <div class="btn-container">
+                        <span class="btn btn-color-2 project-btn is-disabled">Proprietary</span>
+                    </div>
+                </article>
+                <article class="details-container color-container project-card">
+                    <div class="project-carousel" aria-roledescription="carousel" aria-label="Chemical analysis ML screenshots">
+                        <img src="./assets/spectra1.jpg" alt="ML analysis: spectral data"
+                            class="project-img active-slide" loading="lazy" />
+                        <img src="./assets/spectra2.jpg" alt="ML analysis: model results" class="project-img"
+                            loading="lazy" />
+                        <img src="./assets/spectra3.jpg" alt="ML analysis: data visualization" class="project-img"
+                            loading="lazy" />
+                    </div>
+                    <h3 class="project-title">Chemical Analysis ML Models</h3>
+                    <p>Machine learning models (Random Forest, Neural Networks) that classify and quantify cannabis
+                        phytochemicals from mass spectrometry data. The preprocessing pipeline handles automated
+                        calibration, feature selection and model evaluation, giving high accuracy for terpene and
+                        cannabinoid detection in agricultural applications.</p>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>scikit-learn</li>
+                        <li>TensorFlow</li>
+                        <li>Pandas</li>
+                    </ul>
+                    <div class="btn-container">
+                        <span class="btn btn-color-2 project-btn is-disabled">Proprietary</span>
+                    </div>
+                </article>
             </div>
-        </div>
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:laith.hijazi.1999@gmail.com">laith.hijazi.1999@gmail.com</a></p>
+
+            <h3 class="subsection-title">Additional Projects</h3>
+            <div class="project-grid">
+                <article class="details-container color-container project-card">
+                    <div class="project-frame">
+                        <img src="./assets/MERN.png" alt="MERN full-stack application" class="project-img"
+                            loading="lazy" />
+                    </div>
+                    <h3 class="project-title">Full Stack MERN Application</h3>
+                    <p>A full-stack web application on the MERN stack with CRUD operations, user authentication and
+                        a RESTful API.</p>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>MongoDB</li>
+                        <li>Express</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                    </ul>
+                    <div class="btn-container">
+                        <a class="btn btn-color-2 project-btn"
+                            href="https://github.com/NSCC-ITC-Fall2023-PROG3017-700-MCa/my-fullstack-app-LaithHijazi"
+                            target="_blank" rel="noopener">GitHub</a>
+                        <a class="btn btn-color-2 project-btn" href="https://w0475011-fullstack.onrender.com/"
+                            target="_blank" rel="noopener">Live Demo</a>
+                    </div>
+                </article>
+                <article class="details-container color-container project-card">
+                    <div class="project-frame">
+                        <img src="./assets/courses.png" alt="ASP.NET course management system" class="project-img"
+                            loading="lazy" />
+                    </div>
+                    <h3 class="project-title">ASP.NET Course Management System</h3>
+                    <p>An ASP.NET C# CRUD application for managing college courses, diplomas and instructor
+                        information, with a CI/CD pipeline on GitHub Actions and Azure.</p>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>C#</li>
+                        <li>ASP.NET</li>
+                        <li>Azure</li>
+                        <li>GitHub Actions</li>
+                    </ul>
+                    <div class="btn-container">
+                        <a class="btn btn-color-2 project-btn"
+                            href="https://github.com/NSCC-ITC-Winter2024-WEBD3000-700-MCa/nscccoursemap-LaithHijazi"
+                            target="_blank" rel="noopener">GitHub</a>
+                        <a class="btn btn-color-2 project-btn" href="https://w0475011-nscccoursemap.azurewebsites.net/"
+                            target="_blank" rel="noopener">Live Demo</a>
+                    </div>
+                </article>
+                <article class="details-container color-container project-card">
+                    <div class="project-frame">
+                        <img src="./assets/laravel.png" alt="Laravel social media platform" class="project-img"
+                            loading="lazy" />
+                    </div>
+                    <h3 class="project-title">Laravel Social Media Platform</h3>
+                    <p>A Laravel social media application with user registration, authentication and post
+                        management, a responsive design, and database-driven content.</p>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>PHP</li>
+                        <li>Laravel</li>
+                        <li>MySQL</li>
+                    </ul>
+                    <div class="btn-container">
+                        <a class="btn btn-color-2 project-btn"
+                            href="https://github.com/NSCC-ITC-Fall2023-INET2005-700-MCa/finalassignment-LaithHijazi"
+                            target="_blank" rel="noopener">GitHub</a>
+                        <a class="btn btn-color-2 project-btn"
+                            href="https://w0475011-finalassignment.onrender.com/register" target="_blank"
+                            rel="noopener">Live Demo</a>
+                    </div>
+                </article>
             </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/laith-hijazi-50b4b7201/">LinkedIn</a></p>
+        </section>
+
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="" class="icon email-icon" />
+                    <p><a href="mailto:laith.hijazi.1999@gmail.com">laith.hijazi.1999@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="" class="icon" />
+                    <p><a href="https://www.linkedin.com/in/laith-hijazi-50b4b7201/" target="_blank"
+                            rel="noopener">LinkedIn</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/github.png" alt="" class="icon" />
+                    <p><a href="https://github.com/LaithHijazi" target="_blank" rel="noopener">GitHub</a></p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
+
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+        <nav aria-label="Footer">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-        <p>Copyright &#169; 2024 Laith Hijazi. All Rights Reserved.</p>
+        <p>Copyright &#169; <span id="year">2026</span> Laith Hijazi. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>

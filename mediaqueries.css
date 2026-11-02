@@ -1,103 +1,186 @@
 @media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+  section {
+    margin: 0 5rem;
   }
+
   .about-containers {
     flex-wrap: wrap;
   }
-  #contact,
-  #projects {
-    height: fit-content;
+
+  .about-containers .details-container {
+    flex: 1 1 22rem;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
+  :root {
+    --nav-height: 4.5rem;
   }
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
+
   section {
     margin: 0 5%;
   }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+
+  .hamburger-icon {
+    display: flex;
   }
-  .about-containers {
-    margin-top: 0;
+
+  .site-nav {
+    justify-content: space-between;
+    padding: 0 5%;
+    position: relative;
+  }
+
+  .site-nav .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    flex-direction: column;
+    gap: 0;
+    min-width: 12rem;
+    background: white;
+    border: 1px solid var(--line-soft);
+    border-radius: 1rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+  }
+
+  .site-nav .nav-links.open {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+  }
+
+  .site-nav .nav-links a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+  }
+
+  .site-nav .nav-links a:hover {
+    text-decoration: none;
+    background: var(--surface-alt);
+  }
+
+  .featured-project {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project-grid,
+  .project-grid--two {
+    grid-template-columns: 1fr;
   }
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+  section {
+    padding: 3rem 0;
   }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
+
   .btn-container {
     flex-wrap: wrap;
   }
-  .contact-info-container {
-    margin: 0;
+
+  #about .about-containers .details-container {
+    flex-basis: 9rem;
   }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .contact-info-container {
+    margin: 0.5rem;
+  }
+
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
   }
+
+  .contact-info-container p {
+    overflow-wrap: anywhere;
+  }
+
   .experience-sub-title {
     font-size: 1.25rem;
   }
+
+  .article-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem 0.75rem;
+  }
+
+  article h4 {
+    font-size: 0.875rem;
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+
+  .details-container {
+    padding: 1.25rem 1rem;
+  }
+
   .logo {
     font-size: 1.5rem;
   }
-  .nav-links {
+
+  footer .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
+
   .section__text__p2 {
     font-size: 1.25rem;
   }
+
   .title {
     font-size: 2rem;
   }
+
+  .featured-project {
+    padding: 1rem;
+  }
+
+  .featured-body .project-title {
+    font-size: 1.6rem;
+  }
+
+  .stats {
+    gap: 0.5rem;
+  }
+
+  .stats li {
+    padding: 0.6rem;
+  }
+
+  .stats strong {
+    font-size: 1.1rem;
+  }
+
+  .featured-body .btn-container {
+    justify-content: stretch;
+  }
+
+  .featured-body .btn {
+    width: 100%;
+  }
+
   .text-container {
-    text-align: justify;
+    text-align: left;
   }
 }
